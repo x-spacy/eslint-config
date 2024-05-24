@@ -1,0 +1,72 @@
+name: Publish package to registry
+
+on:
+  release:
+    types:
+      - released
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      #
+      # Checkout repository
+      #
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      #
+      # Setup Node.js
+      #
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          registry-url: https://registry.npmjs.org/
+
+      #
+      # Setup PNPM package manager
+      #
+      - name: Setup package manager
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9
+
+      #
+      # Install all dependencies
+      #
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      #
+      # Configure git user email
+      #
+      - name: Configure git user email
+        run: git config --global user.email "${{ github.event.release.author.email }}"
+
+      #
+      # Configure git user name
+      #
+      - name: Configure git user name
+        run: git config --global user.name "${{ github.event.release.author.login }}"
+
+      #
+      # Change package version
+      #
+      - name: Change package version
+        run: pnpm version ${{ github.event.release.tag_name }}
+
+      #
+      # Build source
+      #
+      - name: Build package and bundle source
+        run: pnpm build
+
+      #
+      # Publish package to destination registry
+      #
+      - name: Publish package to registry
+        run: pnpm publish --no-git-checks
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

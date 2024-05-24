@@ -1,0 +1,58 @@
+{
+  "name": "@x-spacy/eslint-config",
+  "version": "0.0.0",
+  "description": "ESLint configuration used by X-Spacy.",
+  "license": "MIT",
+  "private": false,
+  "main": "dist/index.js",
+  "type": "module",
+  "author": {
+    "name": "Vinícius Gutierrez da Silva Rocha",
+    "email": "srgutyerrez@gmail.com",
+    "url": "https://github.com/gutyerrez"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/x-spacy/eslint-config.git"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org",
+    "access": "public",
+    "tag": "latest"
+  },
+  "engines": {
+    "node": "v20.x.x"
+  },
+  "scripts": {
+    "build": "sh scripts/build.sh"
+  },
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^7.9.0",
+    "@typescript-eslint/parser": "^7.9.0",
+    "@typescript-eslint/utils": "^7.10.0",
+    "eslint-plugin-import-helpers": "^1.3.1",
+    "eslint-plugin-import-newlines": "^1.4.0",
+    "eslint-plugin-jest": "^28.5.0",
+    "eslint-plugin-unused-imports": "^3.2.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.24.5",
+    "@babel/core": "^7.24.5",
+    "@babel/plugin-transform-typescript": "^7.24.5",
+    "@babel/preset-typescript": "^7.24.1",
+    "eslint": "^9.3.0",
+    "typescript": "^5.4.5"
+  },
+  "peerDependencies": {
+    "eslint": "^8.57.0",
+    "typescript": "^5.4.5"
+  },
+  "peerDependenciesMeta": {
+    "typescript": {
+      "optional": false
+    },
+    "jest": {
+      "optional": false
+    }
+  }
+}
