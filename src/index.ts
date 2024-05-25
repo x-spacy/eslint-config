@@ -136,6 +136,7 @@ export default [
       'no-loss-of-precision': 'off',
       'no-unused-vars': 'off',
       'require-await': 'off',
+      'space-in-parens': [ 'error', 'never' ],
       '@typescript-eslint/no-non-null-assertion': 'off',
       '@typescript-eslint/triple-slash-reference': 'off',
       '@typescript-eslint/no-empty-function': 'off',
