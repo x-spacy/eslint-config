@@ -148,7 +148,6 @@ export default [
       '@typescript-eslint/no-duplicate-type-constituents': 'error',
       '@typescript-eslint/no-explicit-any': 'error',
       '@typescript-eslint/no-extra-non-null-assertion': 'error',
-      '@typescript-eslint/no-floating-promises': 'error',
       '@typescript-eslint/no-for-in-array': 'error',
       '@typescript-eslint/no-implied-eval': 'error',
       '@typescript-eslint/no-loss-of-precision': 'error',
