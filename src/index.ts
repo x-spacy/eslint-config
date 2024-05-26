@@ -14,7 +14,7 @@ import UnusedImports from 'eslint-plugin-unused-imports';
 
 export default [
   {
-    files: [ '**/*.ts' ],
+    files: [ '**/*.js', '**/*.jsx', '**/*.ts', '**/*.tsx', '**/*.spec.ts' ],
     languageOptions: {
       parser: TypeScriptParser,
 
