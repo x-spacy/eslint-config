@@ -206,37 +206,37 @@ export default [
       ]
     }
   },
-  {
-    files: [ '**/*.spec.ts' ],
-    settings: {
-      env: {
-        jest: true
-      }
-    },
-    plugins: { Jest },
-    rules: {
-      'jest/expect-expect': 'warn',
-      'jest/no-alias-methods': 'error',
-      'jest/no-commented-out-tests': 'warn',
-      'jest/no-conditional-expect': 'error',
-      'jest/no-conditional-in-test': 'error',
-      'jest/no-deprecated-functions': 'error',
-      'jest/no-disabled-tests': 'error',
-      'jest/no-done-callback': 'error',
-      'jest/no-export': 'error',
-      'jest/no-focused-tests': 'error',
-      'jest/no-identical-title': 'error',
-      'jest/no-interpolation-in-snapshots': 'error',
-      'jest/no-jasmine-globals': 'error',
-      'jest/no-mocks-import': 'error',
-      'jest/no-standalone-expect': 'error',
-      'jest/no-test-prefixes': 'error',
-      'jest/valid-describe-callback': 'error',
-      'jest/valid-expect': 'error',
-      'jest/valid-expect-in-promise': 'error',
-      'jest/valid-title': 'error'
-    }
-  },
+  // {
+  //   files: [ '**/*.spec.ts' ],
+  //   settings: {
+  //     env: {
+  //       jest: true
+  //     }
+  //   },
+  //   plugins: { Jest },
+  //   rules: {
+  //     'jest/expect-expect': 'warn',
+  //     'jest/no-alias-methods': 'error',
+  //     'jest/no-commented-out-tests': 'warn',
+  //     'jest/no-conditional-expect': 'error',
+  //     'jest/no-conditional-in-test': 'error',
+  //     'jest/no-deprecated-functions': 'error',
+  //     'jest/no-disabled-tests': 'error',
+  //     'jest/no-done-callback': 'error',
+  //     'jest/no-export': 'error',
+  //     'jest/no-focused-tests': 'error',
+  //     'jest/no-identical-title': 'error',
+  //     'jest/no-interpolation-in-snapshots': 'error',
+  //     'jest/no-jasmine-globals': 'error',
+  //     'jest/no-mocks-import': 'error',
+  //     'jest/no-standalone-expect': 'error',
+  //     'jest/no-test-prefixes': 'error',
+  //     'jest/valid-describe-callback': 'error',
+  //     'jest/valid-expect': 'error',
+  //     'jest/valid-expect-in-promise': 'error',
+  //     'jest/valid-title': 'error'
+  //   }
+  // },
   {
     files: [ 'eslint.config.mjs' ],
     rules: {
