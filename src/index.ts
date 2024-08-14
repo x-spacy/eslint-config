@@ -1,15 +1,9 @@
 import TypeScript from '@typescript-eslint/eslint-plugin';
-
 import TypeScriptParser from '@typescript-eslint/parser';
-
 import { TSESLint } from '@typescript-eslint/utils';
-
 import ImportHelpers from 'eslint-plugin-import-helpers';
-
 import ImportNewlines from 'eslint-plugin-import-newlines';
-
 import Jest from 'eslint-plugin-jest';
-
 import UnusedImports from 'eslint-plugin-unused-imports';
 
 export default [
@@ -40,7 +34,7 @@ export default [
       'no-duplicate-imports': 'error',
       'no-case-declarations': 'error',
       'no-trailing-spaces': [ 'error', { ignoreComments: true } ],
-      'indent': [ 'error', 2 ],
+      'indent': [ 'error', 2, { SwitchCase: 1 } ],
       'semi': [ 'error', 'always' ],
       'padding-line-between-statements': [
         'error',
