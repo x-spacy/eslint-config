@@ -164,6 +164,7 @@ export default [
       '@typescript-eslint/restrict-plus-operands': 'error',
       '@typescript-eslint/restrict-template-expressions': 'error',
       '@typescript-eslint/unbound-method': 'error',
+      'unused-imports/no-unused-imports': 'error',
       'import-newlines/enforce': [
         'error',
         2,
@@ -187,9 +188,9 @@ export default [
             '/^enums/',
             [
               'parent',
-              'sibling'
-            ],
-            'index'
+              'sibling',
+              'index'
+            ]
           ],
           alphabetize: {
             order: 'asc',
