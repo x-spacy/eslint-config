@@ -178,13 +178,20 @@ export default [
             '/^@nestjs/',
             '/^class-transformer/',
             '/^class-validator/',
-            'module',
-            '/^providers/',
-            '/^storage/',
-            '/^data/',
-            '/^dtos/',
-            '/^exceptions/',
-            '/^enums/',
+            [
+              'module'
+            ],
+            [
+              '/^providers/',
+              '/^storage/',
+              '/^data/',
+              '/^models/',
+              '/^entity/',
+              '/^entities/',
+              '/^dtos/',
+              '/^exceptions/',
+              '/^enums/'
+            ],
             [
               'parent',
               'sibling',
