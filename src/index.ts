@@ -154,7 +154,6 @@ export default [
       '@typescript-eslint/no-this-alias': 'error',
       '@typescript-eslint/no-unnecessary-type-assertion': 'error',
       '@typescript-eslint/no-unnecessary-type-constraint': 'error',
-      '@typescript-eslint/no-unsafe-call': 'error',
       '@typescript-eslint/no-unsafe-declaration-merging': 'error',
       '@typescript-eslint/no-unsafe-enum-comparison': 'error',
       '@typescript-eslint/no-unsafe-return': 'error',
