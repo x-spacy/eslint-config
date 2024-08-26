@@ -8,19 +8,8 @@ import UnusedImports from 'eslint-plugin-unused-imports';
 
 export default [
   {
-    files: [ '**/*.js', '**/*.jsx', '**/*.ts', '**/*.tsx', '**/*.spec.ts' ],
-    languageOptions: {
-      parser: TypeScriptParser,
-
-      ecmaVersion: 2020,
-      sourceType: 'module',
-
-      parserOptions: {
-        project: './tsconfig.json'
-      }
-    },
+    files: [ '**/*.js', '**/*.jsx', '**/*.spec.js', '**/*.spec.jsx' ],
     plugins: {
-      '@typescript-eslint': TypeScript,
       'import-newlines': ImportNewlines,
       'unused-imports': UnusedImports,
       'import-helpers': ImportHelpers
@@ -131,6 +120,69 @@ export default [
       'no-unused-vars': 'off',
       'require-await': 'off',
       'space-in-parens': [ 'error', 'never' ],
+      'unused-imports/no-unused-imports': 'error',
+      'import-newlines/enforce': [
+        'error',
+        2,
+        180
+      ],
+      'import-helpers/order-imports': [
+        'error',
+        {
+          newlinesBetween: 'always-and-inside-groups',
+          groups: [
+            '/^reflect-metadata/',
+            '/^@nestjs/',
+            '/^class-transformer/',
+            '/^class-validator/',
+            [
+              'module'
+            ],
+            [
+              '/^providers/',
+              '/^database/',
+              '/^storage/',
+              '/^services/',
+              '/^usecases/',
+              '/^data/',
+              '/^models/',
+              '/^entity/',
+              '/^entities/',
+              '/^dtos/',
+              '/^repositories/',
+              '/^exceptions/',
+              '/^enums/'
+            ],
+            [
+              'parent',
+              'sibling',
+              'index'
+            ]
+          ],
+          alphabetize: {
+            order: 'asc',
+            ignoreCase: true
+          }
+        }
+      ]
+    }
+  },
+  {
+    files: [ '**/*.ts', '**/*.tsx', '**/*.spec.ts', '**/*.spec.tsx' ],
+    languageOptions: {
+      parser: TypeScriptParser,
+
+      ecmaVersion: 2020,
+      sourceType: 'module',
+
+      parserOptions: {
+        project: './tsconfig.json'
+      }
+    },
+    plugins: {
+      '@typescript-eslint': TypeScript
+    },
+    rules: {
       '@typescript-eslint/no-non-null-assertion': 'off',
       '@typescript-eslint/triple-slash-reference': 'off',
       '@typescript-eslint/no-empty-function': 'off',
@@ -162,52 +214,11 @@ export default [
       '@typescript-eslint/prefer-as-const': 'error',
       '@typescript-eslint/restrict-plus-operands': 'error',
       '@typescript-eslint/restrict-template-expressions': 'error',
-      '@typescript-eslint/unbound-method': 'error',
-      'unused-imports/no-unused-imports': 'error',
-      'import-newlines/enforce': [
-        'error',
-        2,
-        180
-      ],
-      'import-helpers/order-imports': [
-        'error',
-        {
-          newlinesBetween: 'always',
-          groups: [
-            '/^reflect-metadata/',
-            '/^@nestjs/',
-            '/^class-transformer/',
-            '/^class-validator/',
-            [
-              'module'
-            ],
-            [
-              '/^providers/',
-              '/^storage/',
-              '/^data/',
-              '/^models/',
-              '/^entity/',
-              '/^entities/',
-              '/^dtos/',
-              '/^exceptions/',
-              '/^enums/'
-            ],
-            [
-              'parent',
-              'sibling',
-              'index'
-            ]
-          ],
-          alphabetize: {
-            order: 'asc',
-            ignoreCase: true
-          }
-        }
-      ]
+      '@typescript-eslint/unbound-method': 'error'
     }
   },
   {
-    files: [ '**/*.spec.ts' ],
+    files: [ '**/*.spec.js', '**/*.spec.jsx', '**/*.spec.ts', '**/*.spec.tsx' ],
     settings: {
       env: {
         jest: true
