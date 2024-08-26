@@ -149,8 +149,8 @@ export default [
               '/^@[^/]+\\/[^/]+\\/controllers\\//',
               '/^@[^/]+\\/[^/]+\\/controllers\\//http/',
               '/^@[^/]+\\/[^/]+\\/controllers\\//grpc/',
-              '/^@[^/]+\\/[^/]+\\/controllers\\//serializers',
-              '/^@[^/]+\\/[^/]+\\/controllers\\//validators'
+              '/^@[^/]+\\/[^/]+\\/controllers\\//serializers/',
+              '/^@[^/]+\\/[^/]+\\/controllers\\//validators/'
             ],
             [
               '/^@[^/]+\\/[^/]+\\/middlewares\\//',
