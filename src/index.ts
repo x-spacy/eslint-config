@@ -149,10 +149,10 @@ export default [
             ],
             [
               '/^@[^/]+\\/[^/]+\\/controllers\\//',
-              '/^@[^/]+\\/[^/]+\\/controllers\\//http/',
-              '/^@[^/]+\\/[^/]+\\/controllers\\//grpc/',
-              '/^@[^/]+\\/[^/]+\\/controllers\\//serializers/',
-              '/^@[^/]+\\/[^/]+\\/controllers\\//validators/'
+              '/^@[^/]+\\/[^/]+\\/controllers\\/http/',
+              '/^@[^/]+\\/[^/]+\\/controllers\\/grpc/',
+              '/^@[^/]+\\/[^/]+\\/controllers\\/serializers/',
+              '/^@[^/]+\\/[^/]+\\/controllers\\/validators/'
             ],
             [
               '/^@[^/]+\\/[^/]+\\/middlewares\\//',
@@ -162,8 +162,8 @@ export default [
             [
               '/^@[^/]+\\/[^/]+\\/database\\//',
               '/^@[^/]+\\/[^/]+\\/storage\\//',
-              '/^@[^/]+\\/[^/]+\\/providers\\//interfaces/',
-              '/^@[^/]+\\/[^/]+\\/providers\\//implementations/'
+              '/^@[^/]+\\/[^/]+\\/providers\\/interfaces/',
+              '/^@[^/]+\\/[^/]+\\/providers\\/implementations/'
             ],
             [
               '/^@[^/]+\\/[^/]+\\/services\\//',
@@ -177,8 +177,8 @@ export default [
             ],
             [
               '/^@[^/]+\\/[^/]+\\/dtos\\//',
-              '/^@[^/]+\\/[^/]+\\/repositories\\//interfaces/',
-              '/^@[^/]+\\/[^/]+\\/repositories\\//implementations/'
+              '/^@[^/]+\\/[^/]+\\/repositories\\/interfaces/',
+              '/^@[^/]+\\/[^/]+\\/repositories\\/implementations/'
             ],
             [
               '/^@[^/]+\\/[^/]+\\/enums\\//',
