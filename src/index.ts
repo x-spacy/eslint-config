@@ -8,7 +8,16 @@ import UnusedImports from 'eslint-plugin-unused-imports';
 
 export default [
   {
-    files: [ '**/*.js', '**/*.jsx', '**/*.spec.js', '**/*.spec.jsx' ],
+    files: [
+      '**/*.js',
+      '**/*.jsx',
+      '**/*.ts',
+      '**/*.tsx',
+      '**/*.spec.js',
+      '**/*.spec.jsx',
+      '**/*.spec.ts',
+      '**/*.spec.tsx'
+    ],
     plugins: {
       'import-newlines': ImportNewlines,
       'unused-imports': UnusedImports,
@@ -168,7 +177,12 @@ export default [
     }
   },
   {
-    files: [ '**/*.ts', '**/*.tsx', '**/*.spec.ts', '**/*.spec.tsx' ],
+    files: [
+      '**/*.ts',
+      '**/*.tsx',
+      '**/*.spec.ts',
+      '**/*.spec.tsx'
+    ],
     languageOptions: {
       parser: TypeScriptParser,
 
@@ -218,13 +232,20 @@ export default [
     }
   },
   {
-    files: [ '**/*.spec.js', '**/*.spec.jsx', '**/*.spec.ts', '**/*.spec.tsx' ],
+    files: [
+      '**/*.spec.js',
+      '**/*.spec.jsx',
+      '**/*.spec.ts',
+      '**/*.spec.tsx'
+    ],
     settings: {
       env: {
         jest: true
       }
     },
-    plugins: { Jest },
+    plugins: { 
+      'jest': Jest
+    },
     rules: {
       'jest/expect-expect': 'warn',
       'jest/no-alias-methods': 'error',
