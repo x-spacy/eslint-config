@@ -144,7 +144,7 @@ export default [
       'import-helpers/order-imports': [
         'error',
         {
-          newlinesBetween: 'always-and-inside-groups',
+          newlinesBetween: 'always',
           groups: [
             '/^reflect-metadata/',
             '/^@nestjs/',
@@ -156,17 +156,25 @@ export default [
             [
               '/^providers/',
               '/^database/',
-              '/^storage/',
+              '/^storage/'
+            ],
+            [
               '/^services/',
-              '/^usecases/',
+              '/^usecases/'
+            ],
+            [
               '/^data/',
               '/^models/',
               '/^entity/',
-              '/^entities/',
+              '/^entities/'
+            ],
+            [
               '/^dtos/',
-              '/^repositories/',
-              '/^exceptions/',
-              '/^enums/'
+              '/^repositories/'
+            ],
+            [
+              '/^enums/',
+              '/^exceptions/'
             ],
             [
               'parent',
