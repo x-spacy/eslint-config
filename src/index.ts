@@ -1,9 +1,15 @@
 import TypeScript from '@typescript-eslint/eslint-plugin';
+
 import TypeScriptParser from '@typescript-eslint/parser';
+
 import { TSESLint } from '@typescript-eslint/utils';
+
 import ImportHelpers from 'eslint-plugin-import-helpers';
+
 import ImportNewlines from 'eslint-plugin-import-newlines';
+
 import Jest from 'eslint-plugin-jest';
+
 import UnusedImports from 'eslint-plugin-unused-imports';
 
 export default [
@@ -243,7 +249,7 @@ export default [
         jest: true
       }
     },
-    plugins: { 
+    plugins: {
       'jest': Jest
     },
     rules: {
