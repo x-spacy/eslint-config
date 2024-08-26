@@ -1,15 +1,9 @@
 import TypeScript from '@typescript-eslint/eslint-plugin';
-
 import TypeScriptParser from '@typescript-eslint/parser';
-
 import { TSESLint } from '@typescript-eslint/utils';
-
 import ImportHelpers from 'eslint-plugin-import-helpers';
-
 import ImportNewlines from 'eslint-plugin-import-newlines';
-
 import Jest from 'eslint-plugin-jest';
-
 import UnusedImports from 'eslint-plugin-unused-imports';
 
 export default [
@@ -144,7 +138,7 @@ export default [
       'import-helpers/order-imports': [
         'error',
         {
-          newlinesBetween: 'always-and-inside-groups',
+          newlinesBetween: 'always',
           groups: [
             '/^reflect-metadata/',
             '/^@nestjs/',
