@@ -148,27 +148,27 @@ export default [
               'module'
             ],
             [
-              '/^providers/',
-              '/^database/',
-              '/^storage/'
+              '/^@[^/]+/[^/]+/providers/',
+              '/^@[^/]+/[^/]+/database/',
+              '/^@[^/]+/[^/]+/storage/'
             ],
             [
-              '/^services/',
-              '/^usecases/'
+              '/^@[^/]+/[^/]+/services/',
+              '/^@[^/]+/[^/]+/usecases/'
             ],
             [
-              '/^data/',
-              '/^models/',
-              '/^entity/',
-              '/^entities/'
+              '/^@[^/]+/[^/]+/data/',
+              '/^@[^/]+/[^/]+/models/',
+              '/^@[^/]+/[^/]+/entity/',
+              '/^@[^/]+/[^/]+/entities/'
             ],
             [
-              '/^dtos/',
-              '/^repositories/'
+              '/^@[^/]+/[^/]+/dtos/',
+              '/^@[^/]+/[^/]+/repositories/'
             ],
             [
-              '/^enums/',
-              '/^exceptions/'
+              '/^@[^/]+/[^/]+/enums/',
+              '/^@[^/]+/[^/]+/exceptions/'
             ],
             [
               'parent',
