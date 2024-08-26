@@ -138,7 +138,7 @@ export default [
       'import-helpers/order-imports': [
         'error',
         {
-          newlinesBetween: 'always',
+          newlinesBetween: 'always-and-inside-groups',
           groups: [
             '/^reflect-metadata/',
             '/^@nestjs/',
