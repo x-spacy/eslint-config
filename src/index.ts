@@ -144,32 +144,20 @@ export default [
             '/^@nestjs/',
             '/^class-transformer/',
             '/^class-validator/',
-            [
-              'module'
-            ],
-            [
-              '/^@[^/]+/[^/]+/providers/',
-              '/^@[^/]+/[^/]+/database/',
-              '/^@[^/]+/[^/]+/storage/'
-            ],
-            [
-              '/^@[^/]+/[^/]+/services/',
-              '/^@[^/]+/[^/]+/usecases/'
-            ],
-            [
-              '/^@[^/]+/[^/]+/data/',
-              '/^@[^/]+/[^/]+/models/',
-              '/^@[^/]+/[^/]+/entity/',
-              '/^@[^/]+/[^/]+/entities/'
-            ],
-            [
-              '/^@[^/]+/[^/]+/dtos/',
-              '/^@[^/]+/[^/]+/repositories/'
-            ],
-            [
-              '/^@[^/]+/[^/]+/enums/',
-              '/^@[^/]+/[^/]+/exceptions/'
-            ],
+            'module',
+            '/^@[^/]+/[^/]+/providers/',
+            '/^@[^/]+/[^/]+/database/',
+            '/^@[^/]+/[^/]+/storage/',
+            '/^@[^/]+/[^/]+/services/',
+            '/^@[^/]+/[^/]+/usecases/',
+            '/^@[^/]+/[^/]+/data/',
+            '/^@[^/]+/[^/]+/models/',
+            '/^@[^/]+/[^/]+/entity/',
+            '/^@[^/]+/[^/]+/entities/',
+            '/^@[^/]+/[^/]+/dtos/',
+            '/^@[^/]+/[^/]+/repositories/',
+            '/^@[^/]+/[^/]+/enums/',
+            '/^@[^/]+/[^/]+/exceptions/',
             [
               'parent',
               'sibling',
