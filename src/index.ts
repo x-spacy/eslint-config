@@ -144,7 +144,9 @@ export default [
             '/^@nestjs/',
             '/^class-transformer/',
             '/^class-validator/',
-            'module',
+            [
+              'module'
+            ],
             [
               '/^@[^/]+\\/[^/]+\\/controllers\\//',
               '/^@[^/]+\\/[^/]+\\/controllers\\//http/',
