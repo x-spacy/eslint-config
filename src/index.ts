@@ -144,13 +144,24 @@ export default [
             '/^@nestjs/',
             '/^class-transformer/',
             '/^class-validator/',
+            'module',
             [
-              'module'
+              '/^@[^/]+\\/[^/]+\\/controllers\\//',
+              '/^@[^/]+\\/[^/]+\\/controllers\\//http/',
+              '/^@[^/]+\\/[^/]+\\/controllers\\//grpc/',
+              '/^@[^/]+\\/[^/]+\\/controllers\\//serializers',
+              '/^@[^/]+\\/[^/]+\\/controllers\\//validators'
             ],
             [
-              '/^@[^/]+\\/[^/]+\\/providers\\//',
+              '/^@[^/]+\\/[^/]+\\/middlewares\\//',
+              '/^@[^/]+\\/[^/]+\\/middlewares\\//http/',
+              '/^@[^/]+\\/[^/]+\\/middlewares\\//grpc/'
+            ],
+            [
               '/^@[^/]+\\/[^/]+\\/database\\//',
-              '/^@[^/]+\\/[^/]+\\/storage\\//'
+              '/^@[^/]+\\/[^/]+\\/storage\\//',
+              '/^@[^/]+\\/[^/]+\\/providers\\//interfaces/',
+              '/^@[^/]+\\/[^/]+\\/providers\\//implementations/'
             ],
             [
               '/^@[^/]+\\/[^/]+\\/services\\//',
@@ -164,7 +175,8 @@ export default [
             ],
             [
               '/^@[^/]+\\/[^/]+\\/dtos\\//',
-              '/^@[^/]+\\/[^/]+\\/repositories\\//'
+              '/^@[^/]+\\/[^/]+\\/repositories\\//interfaces/',
+              '/^@[^/]+\\/[^/]+\\/repositories\\//implementations/'
             ],
             [
               '/^@[^/]+\\/[^/]+\\/enums\\//',
