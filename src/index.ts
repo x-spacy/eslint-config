@@ -180,6 +180,11 @@ export default [
               '/^@[^/]+\\/[^/]+\\/entities\\//'
             ],
             [
+              '/^@[^/]+\\/[^/]+\\/cache\\//',
+              '/^@[^/]+\\/[^/]+\\/cache\\/interfaces/',
+              '/^@[^/]+\\/[^/]+\\/cache\\/implementations/'
+            ],
+            [
               '/^@[^/]+\\/[^/]+\\/dtos\\//',
               '/^@[^/]+\\/[^/]+\\/repositories\\/interfaces/',
               '/^@[^/]+\\/[^/]+\\/repositories\\/implementations/'
@@ -190,6 +195,8 @@ export default [
             ],
             [
               '/^@prisma/client/',
+              '/^@[^/]+/exceptions/',
+              '/^@[^/]+/environment/',
               'parent',
               'sibling',
               'index'
