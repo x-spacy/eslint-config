@@ -141,6 +141,10 @@ export default [
           newlinesBetween: 'always',
           groups: [
             '/^reflect-metadata/',
+            [
+              '/^i18next/',
+              '/^i18next-fs-backend/'
+            ],
             '/^@nestjs/',
             '/^class-transformer/',
             '/^class-validator/',
@@ -185,6 +189,7 @@ export default [
               '/^@[^/]+\\/[^/]+\\/exceptions\\//'
             ],
             [
+              '/^@prisma/client/',
               'parent',
               'sibling',
               'index'
