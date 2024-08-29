@@ -233,7 +233,7 @@ export default [
     rules: {
       '@typescript-eslint/no-non-null-assertion': 'off',
       '@typescript-eslint/triple-slash-reference': 'off',
-      '@typescript-eslint/no-empty-function': 'off',
+      '@typescript-eslint/no-empty-function': 'error',
       '@typescript-eslint/await-thenable': 'error',
       '@typescript-eslint/ban-ts-comment': 'error',
       '@typescript-eslint/ban-types': 'error',
