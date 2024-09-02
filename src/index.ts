@@ -153,15 +153,7 @@ export default [
             ],
             [
               '/^@[^/]+\\/[^/]+\\/controllers\\//',
-              '/^@[^/]+\\/[^/]+\\/controllers\\/http/',
-              '/^@[^/]+\\/[^/]+\\/controllers\\/grpc/',
-              '/^@[^/]+\\/[^/]+\\/controllers\\/serializers/',
-              '/^@[^/]+\\/[^/]+\\/controllers\\/validators/',
-              '/^@[^/]+\\/[^/]+\\/[^/]+\\/controllers\\/',
-              '/^@[^/]+\\/[^/]+\\/[^/]+\\/controllers\\/http/',
-              '/^@[^/]+\\/[^/]+\\/[^/]+\\/controllers\\/grpc/',
-              '/^@[^/]+\\/[^/]+\\/[^/]+\\/controllers\\/serializers/',
-              '/^@[^/]+\\/[^/]+\\/[^/]+\\/controllers\\/validators/'
+              '/^@[^/]+\\/[^/]+\\/controllers\\/(http|grpc|serializers|validators)/'
             ],
             [
               '/^@[^/]+\\/[^/]+\\/middlewares\\//',
@@ -171,49 +163,31 @@ export default [
             [
               '/^@[^/]+\\/[^/]+\\/database\\//',
               '/^@[^/]+\\/[^/]+\\/storage\\//',
-              '/^@[^/]+\\/[^/]+\\/providers\\/interfaces/',
-              '/^@[^/]+\\/[^/]+\\/providers\\/implementations/'
+              '/^@[^/]+\\/[^/]+\\/providers\\/(interfaces|implementations)/'
             ],
             [
               '/^@[^/]+\\/[^/]+\\/services\\//',
-              '/^@[^/]+\\/[^/]+\\/usecases\\//',
-              '/^@[^/]+\\/[^/]+\\/[^/]+\\/services\\//',
-              '/^@[^/]+\\/[^/]+\\/[^/]+\\/usecases\\//'
+              '/^@[^/]+\\/[^/]+\\/usecases\\//'
             ],
             [
               '/^@[^/]+\\/[^/]+\\/data\\//',
               '/^@[^/]+\\/[^/]+\\/models\\//',
               '/^@[^/]+\\/[^/]+\\/entity\\//',
-              '/^@[^/]+\\/[^/]+\\/entities\\//',
-              '/^@[^/]+\\/[^/]+\\/[^/]+\\/data\\//',
-              '/^@[^/]+\\/[^/]+\\/[^/]+\\/models\\//',
-              '/^@[^/]+\\/[^/]+\\/[^/]+\\/entity\\//',
-              '/^@[^/]+\\/[^/]+\\/[^/]+\\/entities\\//'
+              '/^@[^/]+\\/[^/]+\\/entities\\//'
             ],
             [
               '/^@[^/]+\\/[^/]+\\/cache\\//',
-              '/^@[^/]+\\/[^/]+\\/cache\\/interfaces/',
-              '/^@[^/]+\\/[^/]+\\/cache\\/implementations/',
+              '/^@[^/]+\\/[^/]+\\/cache\\/(interfaces|implementations)/',
               '/^@[^/]+\\/[^/]+\\/queues\\//',
-              '/^@[^/]+\\/[^/]+\\/queues\\/interfaces/',
-              '/^@[^/]+\\/[^/]+\\/queues\\/implementations/',
-              '/^@[^/]+\\/[^/]+\\/queues\\/bull/',
-              '/^@[^/]+\\/[^/]+\\/queues\\/redis/',
-              '/^@[^/]+\\/[^/]+\\/queues\\/common/'
+              '/^@[^/]+\\/[^/]+\\/queues\\/(interfaces|implementations|bull|redis|common)/'
             ],
             [
               '/^@[^/]+\\/[^/]+\\/dtos\\//',
-              '/^@[^/]+\\/[^/]+\\/repositories\\/interfaces/',
-              '/^@[^/]+\\/[^/]+\\/repositories\\/implementations/',
-              '/^@[^/]+\\/[^/]+\\/[^/]+\\/dtos\\//',
-              '/^@[^/]+\\/[^/]+\\/[^/]+\\/repositories\\/interfaces/',
-              '/^@[^/]+\\/[^/]+\\/[^/]+\\/repositories\\/implementations/'
+              '/^@[^/]+\\/[^/]+\\/repositories\\/(interfaces|implementations)/'
             ],
             [
               '/^@[^/]+\\/[^/]+\\/enums\\//',
-              '/^@[^/]+\\/[^/]+\\/exceptions\\//',
-              '/^@[^/]+\\/[^/]+\\/[^/]+\\/enums\\//',
-              '/^@[^/]+\\/[^/]+\\/[^/]+\\/exceptions\\//'
+              '/^@[^/]+\\/[^/]+\\/exceptions\\//'
             ],
             [
               '/^@prisma/client/',
