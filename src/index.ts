@@ -178,7 +178,13 @@ export default [
             [
               '/^@[^/]+\\/[^/]+\\/cache\\//',
               '/^@[^/]+\\/[^/]+\\/cache\\/interfaces/',
-              '/^@[^/]+\\/[^/]+\\/cache\\/implementations/'
+              '/^@[^/]+\\/[^/]+\\/cache\\/implementations/',
+              '/^@[^/]+\\/[^/]+\\/queues\\//',
+              '/^@[^/]+\\/[^/]+\\/queues\\/interfaces/',
+              '/^@[^/]+\\/[^/]+\\/queues\\/implementations/',
+              '/^@[^/]+\\/[^/]+\\/queues\\/bull/',
+              '/^@[^/]+\\/[^/]+\\/queues\\/redis/',
+              '/^@[^/]+\\/[^/]+\\/queues\\/common/'
             ],
             [
               '/^@[^/]+\\/[^/]+\\/dtos\\//',
