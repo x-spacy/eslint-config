@@ -18,6 +18,20 @@ export default [
       '**/*.spec.ts',
       '**/*.spec.tsx'
     ],
+    ignores: [
+      'dist/**',
+      'build/**',
+      'out/**',
+      '.next/**',
+      '.nuxt/**',
+      '.turbo/**',
+      '**/node_modules/**',
+      '**/.git/**',
+      '**/.github/**',
+      '**/.husky/**',
+      '**/.vscode/**',
+      '**/coverage/**'
+    ],
     plugins: {
       'import-newlines': ImportNewlines,
       'unused-imports': UnusedImports,
@@ -232,6 +246,10 @@ export default [
       '@typescript-eslint': TypeScript
     },
     rules: {
+      'jsx-quotes': [
+        'error',
+        'prefer-single'
+      ],
       '@typescript-eslint/no-non-null-assertion': 'off',
       '@typescript-eslint/triple-slash-reference': 'off',
       '@typescript-eslint/no-empty-function': 'error',
