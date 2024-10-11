@@ -144,6 +144,15 @@ export default [
       'require-await': 'off',
       'space-in-parens': [ 'error', 'never' ],
       'unused-imports/no-unused-imports': 'error',
+      'no-restricted-imports': [
+        'error',
+        {
+          'patterns': [
+            './*',
+            '../*'
+          ]
+        }
+      ],
       'import-newlines/enforce': [
         'error',
         2,
@@ -189,6 +198,7 @@ export default [
             ],
             [
               '/^@[^/]+\\/[^/]+(?:\\/[^/]+)?\\/data\\//',
+              '/^@[^/]+\\/[^/]+(?:\\/[^/]+)?\\/model\\//',
               '/^@[^/]+\\/[^/]+(?:\\/[^/]+)?\\/models\\//',
               '/^@[^/]+\\/[^/]+(?:\\/[^/]+)?\\/entity\\//',
               '/^@[^/]+\\/[^/]+(?:\\/[^/]+)?\\/entities\\//',
