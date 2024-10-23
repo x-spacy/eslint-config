@@ -50,12 +50,7 @@ export default [
       'no-trailing-spaces': [ 'error', { ignoreComments: true } ],
       'indent': [ 'error', 2, { SwitchCase: 1 } ],
       'semi': [ 'error', 'always' ],
-      'function-paren-newline': [
-        'error',
-        {
-          minItems: 4
-        }
-      ],
+      'function-paren-newline': [ 'error', 'multiline' ],
       'padding-line-between-statements': [
         'error',
         {
