@@ -194,6 +194,8 @@ export default [
               '/^@[^/]+\\/[^/]+(?:\\/[^/]+)?\\/database\\//',
               '/^@[^/]+\\/[^/]+(?:\\/[^/]+)?\\/storage\\//',
               '/^@[^/]+\\/[^/]+(?:\\/[^/]+)?\\/storage\\//repositories\\/(interfaces|implementations)/',
+              '/^@[^/]+\\/[^/]+(?:\\/[^/]+)?\\/storages\\//',
+              '/^@[^/]+\\/[^/]+(?:\\/[^/]+)?\\/storages\\//repositories\\/(interfaces|implementations)/',
               '/^@[^/]+\\/[^/]+(?:\\/[^/]+)?\\/providers\\/(interfaces|implementations)/'
             ],
             [
@@ -211,8 +213,14 @@ export default [
             [
               '/^@[^/]+\\/[^/]+(?:\\/[^/]+)?\\/cache\\//',
               '/^@[^/]+\\/[^/]+(?:\\/[^/]+)?\\/cache\\/(interfaces|implementations)/',
+              '/^@[^/]+\\/[^/]+(?:\\/[^/]+)?\\/caches\\//',
+              '/^@[^/]+\\/[^/]+(?:\\/[^/]+)?\\/caches\\/(interfaces|implementations)/',
               '/^@[^/]+\\/[^/]+(?:\\/[^/]+)?\\/queues\\//',
               '/^@[^/]+\\/[^/]+(?:\\/[^/]+)?\\/queues\\/(interfaces|implementations|bull|redis|memory|common)/'
+            ],
+            [
+              '/^@[^/]+\\/[^/]+(?:\\/[^/]+)?\\/messages\\//',
+              '/^@[^/]+\\/[^/]+(?:\\/[^/]+)?\\/messages\\/(interfaces|implementations)/'
             ],
             [
               '/^@[^/]+\\/[^/]+(?:\\/[^/]+)?\\/dtos\\//',
