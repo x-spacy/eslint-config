@@ -45,6 +45,8 @@ export default [
       'prefer-arrow-callback': 'error',
       'no-duplicate-imports': 'error',
       'no-case-declarations': 'error',
+      'brace-style': 'error',
+      'curly': 'error',
       'no-trailing-spaces': [ 'error', { ignoreComments: true } ],
       'indent': [ 'error', 2, { SwitchCase: 1 } ],
       'semi': [ 'error', 'always' ],
