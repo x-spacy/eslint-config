@@ -52,7 +52,9 @@ export default [
       'semi': [ 'error', 'always' ],
       'function-paren-newline': [
         'error',
-        'always'
+        {
+          minItems: 4
+        }
       ],
       'padding-line-between-statements': [
         'error',
