@@ -50,6 +50,10 @@ export default [
       'no-trailing-spaces': [ 'error', { ignoreComments: true } ],
       'indent': [ 'error', 2, { SwitchCase: 1 } ],
       'semi': [ 'error', 'always' ],
+      'function-paren-newline': [
+        'error',
+        'always'
+      ],
       'padding-line-between-statements': [
         'error',
         {
@@ -110,7 +114,8 @@ export default [
         'error',
         {
           max: 1,
-          maxEOF: 0
+          maxEOF: 1,
+          maxBOF: 0
         }
       ],
       'max-len': [
