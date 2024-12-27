@@ -274,7 +274,6 @@ export default [
       ],
       '@typescript-eslint/no-non-null-assertion': 'off',
       '@typescript-eslint/triple-slash-reference': 'off',
-      '@typescript-eslint/no-empty-function': 'error',
       '@typescript-eslint/await-thenable': 'error',
       '@typescript-eslint/ban-ts-comment': 'error',
       '@typescript-eslint/ban-types': 'error',
@@ -296,6 +295,18 @@ export default [
       '@typescript-eslint/no-unnecessary-type-constraint': 'error',
       '@typescript-eslint/no-unsafe-declaration-merging': 'error',
       '@typescript-eslint/no-unsafe-enum-comparison': 'error',
+      '@typescript-eslint/no-unsafe-return': 'error',
+      '@typescript-eslint/no-var-requires': 'error',
+      '@typescript-eslint/prefer-as-const': 'error',
+      '@typescript-eslint/restrict-plus-operands': 'error',
+      '@typescript-eslint/restrict-template-expressions': 'error',
+      '@typescript-eslint/unbound-method': 'error',
+      '@typescript-eslint/no-empty-function': [
+        'error',
+        {
+          'allow': []
+        }
+      ],
       '@typescript-eslint/no-unused-vars': [
         'error',
         {
@@ -307,12 +318,7 @@ export default [
           'varsIgnorePattern': '^_',
           'ignoreRestSiblings': true
         }
-      ],
-      '@typescript-eslint/no-var-requires': 'error',
-      '@typescript-eslint/prefer-as-const': 'error',
-      '@typescript-eslint/restrict-plus-operands': 'error',
-      '@typescript-eslint/restrict-template-expressions': 'error',
-      '@typescript-eslint/unbound-method': 'error'
+      ]
     }
   },
   {
