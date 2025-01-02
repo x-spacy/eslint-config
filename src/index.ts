@@ -115,12 +115,6 @@ export default [
           maxBOF: 0
         }
       ],
-      'max-len': [
-        'error',
-        {
-          'code': 180
-        }
-      ],
       'key-spacing': [
         'error',
         {
