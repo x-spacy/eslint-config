@@ -270,7 +270,6 @@ export default [
       '@typescript-eslint/triple-slash-reference': 'off',
       '@typescript-eslint/await-thenable': 'error',
       '@typescript-eslint/ban-ts-comment': 'error',
-      '@typescript-eslint/ban-types': 'error',
       '@typescript-eslint/no-array-constructor': 'error',
       '@typescript-eslint/no-base-to-string': 'error',
       '@typescript-eslint/no-duplicate-enum-values': 'error',
