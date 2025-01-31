@@ -1,3 +1,4 @@
+import StylisticTs from '@stylistic/eslint-plugin-ts';
 import TypeScript from '@typescript-eslint/eslint-plugin';
 import TypeScriptParser from '@typescript-eslint/parser';
 import { TSESLint } from '@typescript-eslint/utils';
@@ -35,7 +36,8 @@ export default [
     plugins: {
       'import-newlines': ImportNewlines,
       'unused-imports': UnusedImports,
-      'import-helpers': ImportHelpers
+      'import-helpers': ImportHelpers,
+      '@stylistic': StylisticTs
     },
     rules: {
       'camelcase': 'error',
@@ -51,49 +53,8 @@ export default [
       'indent': [ 'error', 2, { SwitchCase: 1 } ],
       'semi': [ 'error', 'always' ],
       'function-paren-newline': [ 'error', 'multiline' ],
-      'padding-line-between-statements': [
-        'error',
-        {
-          blankLine: 'always',
-          prev: 'const',
-          next: 'return'
-        },
-        {
-          blankLine: 'always',
-          prev: 'const',
-          next: 'if'
-        },
-        {
-          blankLine: 'always',
-          prev: 'let',
-          next: 'return'
-        },
-        {
-          blankLine: 'always',
-          prev: 'let',
-          next: 'if'
-        },
-        {
-          blankLine: 'always',
-          prev: 'var',
-          next: 'return'
-        },
-        {
-          blankLine: 'always',
-          prev: 'var',
-          next: 'if'
-        },
-        {
-          blankLine: 'always',
-          prev: 'if',
-          next: '*'
-        },
-        {
-          blankLine: 'always',
-          prev: 'export',
-          next: '*'
-        }
-      ],
+      'no-inner-declarations': 'error',
+      'lines-between-class-members': [ 'error', 'always', { exceptAfterSingleLine: false } ],
       'space-before-function-paren': [
         'error',
         {
@@ -149,6 +110,59 @@ export default [
             './*',
             '../*'
           ]
+        }
+      ],
+      '@stylistic/padding-line-between-statements': [
+        'error',
+        {
+          blankLine: 'always',
+          prev: 'const',
+          next: 'return'
+        },
+        {
+          blankLine: 'always',
+          prev: 'const',
+          next: 'if'
+        },
+        {
+          blankLine: 'always',
+          prev: 'let',
+          next: 'return'
+        },
+        {
+          blankLine: 'always',
+          prev: 'let',
+          next: 'if'
+        },
+        {
+          blankLine: 'always',
+          prev: 'var',
+          next: 'return'
+        },
+        {
+          blankLine: 'always',
+          prev: 'var',
+          next: 'if'
+        },
+        {
+          blankLine: 'always',
+          prev: 'if',
+          next: '*'
+        },
+        {
+          blankLine: 'always',
+          prev: 'export',
+          next: '*'
+        },
+        {
+          blankLine: 'never',
+          prev: 'block-like',
+          next: '*'
+        },
+        {
+          blankLine: 'never',
+          prev: 'class',
+          next: '*'
         }
       ],
       'import-newlines/enforce': [
@@ -250,10 +264,8 @@ export default [
     ],
     languageOptions: {
       parser: TypeScriptParser,
-
       ecmaVersion: 2020,
       sourceType: 'module',
-
       parserOptions: {
         project: './tsconfig.json'
       }

@@ -27,6 +27,7 @@
     "build": "sh scripts/build.sh"
   },
   "dependencies": {
+    "@stylistic/eslint-plugin-ts": "^3.0.1",
     "@typescript-eslint/eslint-plugin": "^7.18.0",
     "@typescript-eslint/parser": "^7.18.0",
     "@typescript-eslint/utils": "^7.18.0",
