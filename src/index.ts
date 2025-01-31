@@ -54,7 +54,6 @@ export default [
       'semi': [ 'error', 'always' ],
       'function-paren-newline': [ 'error', 'multiline' ],
       'no-inner-declarations': 'error',
-      'lines-between-class-members': [ 'error', 'always', { exceptAfterSingleLine: false } ],
       'space-before-function-paren': [
         'error',
         {
@@ -112,6 +111,7 @@ export default [
           ]
         }
       ],
+      '@stylistic/lines-between-class-members': [ 'error', 'always', { exceptAfterSingleLine: false } ],
       '@stylistic/padding-line-between-statements': [
         'error',
         {
@@ -155,7 +155,7 @@ export default [
           next: '*'
         },
         {
-          blankLine: 'never',
+          blankLine: 'always',
           prev: 'block-like',
           next: '*'
         },
@@ -163,8 +163,14 @@ export default [
           blankLine: 'never',
           prev: 'class',
           next: '*'
+        },
+        {
+          blankLine: 'never',
+          prev: 'export',
+          next: '*'
         }
       ],
+      '@stylistic/member-delimiter-style': 'error',
       'import-newlines/enforce': [
         'error',
         2,
