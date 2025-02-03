@@ -155,11 +155,6 @@ export default [
           next: '*'
         },
         {
-          blankLine: 'always',
-          prev: 'block-like',
-          next: '*'
-        },
-        {
           blankLine: 'never',
           prev: 'class',
           next: '*'
