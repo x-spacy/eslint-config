@@ -228,6 +228,9 @@ export default [
               '/^@[^/]+\\/[^/]+(?:\\/[^/]+)?\\/queues\\/(interfaces|implementations|bull|redis|memory|common)/'
             ],
             [
+              '/^@[^/]+\\/[^/]+(?:\\/[^/]+)?\\/subscribers\\//'
+            ],
+            [
               '/^@[^/]+\\/[^/]+(?:\\/[^/]+)?\\/messages\\//',
               '/^@[^/]+\\/[^/]+(?:\\/[^/]+)?\\/messages\\/(interfaces|implementations)/'
             ],
