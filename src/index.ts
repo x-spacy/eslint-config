@@ -169,7 +169,7 @@ export default [
       'import-newlines/enforce': [
         'error',
         2,
-        180
+        240
       ],
       'import-helpers/order-imports': [
         'error',
