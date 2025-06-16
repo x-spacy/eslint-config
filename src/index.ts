@@ -182,6 +182,25 @@ export default [
               '/^next/'
             ],
             [
+              '/^expo/',
+              '/^expo-blur/',
+              '/^expo-constants/',
+              '/^expo-font/',
+              '/^expo-haptics/',
+              '/^expo-image/',
+              '/^expo-linking/',
+              '/^expo-location/',
+              '/^expo-media-library/',
+              '/^expo-router/',
+              '/^expo-screen-orientation/',
+              '/^expo-splash-screen/',
+              '/^expo-status-bar/',
+              '/^expo-symbols/',
+              '/^expo-system-ui/',
+              '/^expo-updates/',
+              '/^expo-web-browser/'
+            ],
+            [
               '/^i18next/',
               '/^i18next-fs-backend/'
             ],
