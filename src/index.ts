@@ -111,7 +111,13 @@ export default [
           ]
         }
       ],
-      '@stylistic/lines-between-class-members': [ 'error', 'always', { exceptAfterSingleLine: false } ],
+      '@stylistic/lines-between-class-members': [
+        'error',
+        'always',
+        {
+          exceptAfterSingleLine: false
+        }
+      ],
       '@stylistic/padding-line-between-statements': [
         'error',
         {
@@ -158,11 +164,6 @@ export default [
           blankLine: 'never',
           prev: 'class',
           next: '*'
-        },
-        {
-          blankLine: 'never',
-          prev: 'export',
-          next: '*'
         }
       ],
       '@stylistic/member-delimiter-style': 'error',
@@ -178,6 +179,9 @@ export default [
           groups: [
             '/^reflect-metadata/',
             '/^react/',
+            [
+              '/^react-native/'
+            ],
             [
               '/^next/'
             ],
@@ -199,6 +203,14 @@ export default [
               '/^expo-system-ui/',
               '/^expo-updates/',
               '/^expo-web-browser/'
+            ],
+            [
+              '/^react-native-maps/',
+              '/^react-native-maps-directions/',
+              '/^react-native-maps-svg/',
+              '/^react-native-maps-gesture-handler/',
+              '/^react-native-maps-safe-area-context/',
+              '/^react-native-maps-screens/'
             ],
             [
               '/^i18next/',
@@ -268,6 +280,9 @@ export default [
             [
               '/^@[^/]+\\/[^/]+(?:\\/[^/]+)?\\/enums\\//',
               '/^@[^/]+\\/[^/]+(?:\\/[^/]+)?\\/exceptions\\//'
+            ],
+            [
+              '/^@[^/]+\\/[^/]+(?:\\/[^/]+)?\\/themes\\//'
             ],
             [
               '/^@prisma/client/',
