@@ -345,7 +345,6 @@ export default [
       '@typescript-eslint/no-unnecessary-type-assertion': 'error',
       '@typescript-eslint/no-unnecessary-type-constraint': 'error',
       '@typescript-eslint/no-unsafe-declaration-merging': 'error',
-      '@typescript-eslint/no-unsafe-return': 'error',
       '@typescript-eslint/no-var-requires': 'error',
       '@typescript-eslint/prefer-as-const': 'error',
       '@typescript-eslint/restrict-plus-operands': 'error',
