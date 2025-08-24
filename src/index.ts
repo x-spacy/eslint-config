@@ -216,6 +216,9 @@ export default [
               '/^i18next/',
               '/^i18next-fs-backend/'
             ],
+            [
+              'express'
+            ],
             '/^@nestjs/',
             '/^class-transformer/',
             '/^class-validator/',
@@ -288,6 +291,10 @@ export default [
               '/^@prisma/client/',
               '/^@[^/]+/exceptions/',
               '/^@[^/]+/environment/',
+              '/^@[^/]+/kafka/',
+              '/^@[^/]+/serializer/',
+              '/^@[^/]+/eslint-config/',
+              '/^@[^/]+/classs-validator/',
               'parent',
               'sibling',
               'index'
