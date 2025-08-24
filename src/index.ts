@@ -217,7 +217,7 @@ export default [
               '/^i18next-fs-backend/'
             ],
             [
-              'express'
+              '/^express/'
             ],
             '/^@nestjs/',
             '/^class-transformer/',
