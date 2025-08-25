@@ -226,6 +226,9 @@ export default [
               'module'
             ],
             [
+              '/^@prisma/client/'
+            ],
+            [
               '/^@[^/]+\\/[^/]+(?:\\/[^/]+)?\\/controllers\\//',
               '/^@[^/]+\\/[^/]+(?:\\/[^/]+)?\\/controllers\\/(http|grpc|serializers|validators)/'
             ],
@@ -288,7 +291,6 @@ export default [
               '/^@[^/]+\\/[^/]+(?:\\/[^/]+)?\\/themes\\//'
             ],
             [
-              '/^@prisma/client/',
               '/^@[^/]+/exceptions/',
               '/^@[^/]+/environment/',
               '/^@[^/]+/kafka/',
