@@ -224,7 +224,7 @@ export default [
             '/^class-validator/',
             [
               '/^axios/'
-            ]'
+            ],
             [
               'module'
             ],
