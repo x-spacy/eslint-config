@@ -223,6 +223,9 @@ export default [
             '/^class-transformer/',
             '/^class-validator/',
             [
+              '/^axios/'
+            ]'
+            [
               'module'
             ],
             [
