@@ -300,6 +300,7 @@ export default [
               '/^@[^/]+/serializer/',
               '/^@[^/]+/eslint-config/',
               '/^@[^/]+/classs-validator/',
+              '/^@[^/]+/drizzle/',
               'parent',
               'sibling',
               'index'
