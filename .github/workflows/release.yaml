@@ -26,18 +26,18 @@ jobs:
           registry-url: https://registry.npmjs.org/
 
       #
-      # Setup PNPM package manager
+      # Setup Bun package manager
       #
       - name: Setup package manager
-        uses: pnpm/action-setup@v4
+        uses: oven-sh/setup-bun@v2
         with:
-          version: 9
+          bun-version: latest
 
       #
       # Install all dependencies
       #
       - name: Install dependencies
-        run: pnpm install --frozen-lockfile
+        run: bun install --frozen-lockfile
 
       #
       # Configure git user email
@@ -55,18 +55,18 @@ jobs:
       # Change package version
       #
       - name: Change package version
-        run: pnpm version ${{ github.event.release.tag_name }}
+        run: bun pm version ${{ github.event.release.tag_name }}
 
       #
       # Build source
       #
       - name: Build package and bundle source
-        run: pnpm build
+        run: bun run build
 
       #
       # Publish package to destination registry
       #
       - name: Publish package to registry
-        run: pnpm publish --no-git-checks
+        run: bun publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

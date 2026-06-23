@@ -5,7 +5,7 @@ A eslint config settings for [X-Spacy](https://x-spacy.com).
 ## Installation
 
 ```sh
-pnpm add @x-spacy/eslint-config -D
+bun add -d @x-spacy/eslint-config
 ```
 
 ## Quick start
